@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .shadow-unhover {
+        box-shadow: 4px 4px 0 theme('colors.black');
+    }
+    .shadow-hover {
+        box-shadow: 6px 6px 0 theme('colors.black');
+    }
+}
+
+
+@media(max-width : 980px)
+{
+    .thumbnail{
+       display: none;
+    }
+}
+
+@media(max-width : 578px)
+{
+    .summary{
+       font-size: 3vw;
+    }
+
+    .tags{
+        font-size: 3vw;
+    }
+}
+
+@media(max-width : 695px)
+{
+   .form-col{
+    flex-direction: column;
+   }
+}
